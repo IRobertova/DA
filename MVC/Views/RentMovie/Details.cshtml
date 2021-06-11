@@ -1,0 +1,74 @@
+﻿@model MVC.ViewModels.UserMovieVM
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>UserMovieVM</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UserMovie_Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserMovie_Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Movie_Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Movie_Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User_Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User_Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rent_Day)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rent_Day)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Return_Day)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Return_Day)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comment)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {  id = Model.UserMovie_Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
